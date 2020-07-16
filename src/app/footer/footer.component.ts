@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { Student } from '../models/student';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+      @Input() studentInfo: Student;
      date = new Date();
      year = this.date.getFullYear();
      months
