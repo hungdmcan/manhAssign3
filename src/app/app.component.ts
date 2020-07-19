@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Student } from './models/student';
 
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,4 +14,5 @@ export class AppComponent {
   author: Student = {sname: 'Manh Hung Dao (Mike)',
               sid: '991557299' ,
               scollege: 'Sheridan College'};
+  numDice = [1, 2, 3, 4, 5];
 }

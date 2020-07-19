@@ -8,8 +8,7 @@ import { Student } from '../models/student';
 })
 export class HeaderComponent implements OnInit {
 
-  sName = 'Manh Hung Dao (Mike)';
-  sID = '991557299';
+
   @Input() studentInfo: Student;
   constructor() { }
 

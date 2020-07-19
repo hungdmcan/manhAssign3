@@ -1,19 +1,16 @@
 
 <div>
   <label>Number of Dice  </label>
-  <select >
-      <!-- ngModel = numOfDice   <option *ngFor="let item of list"></option> -->
-      <!-- (ngModel)] = "numOfDice" <option>{{maxNumDice}}</option> -->
-      <option *ngFor = "let i of numDiceArray">{{i}}</option>
+  <select [(ngModel)] = "myNumDice" (change) = 'updateGame()'>
+      <option *ngFor = "let i of cdNumDice" [value] = "i">{{i}}</option>
   </select>
   <br/>
-  <!-- You select {{numOfDice}} -->
+
   <br/>
-<img *ngFor =  "let die of this.game.dice; index as i;"
+<img *ngFor =  "let die of this.game.dice"
     src = "../../assets/images/dice/side_{{die.side}}.png"/>
-
-</div>
-
-
+<br/>
 <br/>
 <button (click)="this.game.rollDice()">Roll Dice</button>
+<br/>
+</div>

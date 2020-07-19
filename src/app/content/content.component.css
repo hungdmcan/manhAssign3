@@ -1,0 +1,11 @@
+button {
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: yellow;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+label, select {
+  font-size: 1.2em;
+}
